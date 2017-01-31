@@ -1,0 +1,42 @@
+general {
+  colors = true
+  color_good = "#99cc99"
+  color_degraded = "#ffcc66"
+  color_bad = "#f2777a"
+  interval = 5
+}
+
+order += "volume master"
+order += "wireless _first_"
+order += "battery 0"
+order += "cpu_temperature 0"
+order += "tztime local"
+
+volume master {
+  format = " %volume"
+  format_muted = ""
+}
+
+wireless _first_ {
+  format_up = " %essid"
+  format_down = ""
+}
+
+battery 0 {
+  format = "%status %percentage"
+  status_bat = ""
+  status_chr = ""
+  status_full = ""
+  low_threshold = 15
+}
+
+cpu_temperature 0 {
+  format = " %degrees °C"
+  format_above_threshold = " %degrees °C"
+  max_threshold = 87
+  path = "/sys/devices/platform/coretemp.0/hwmon/hwmon0/temp1_input"
+}
+
+tztime local {
+  format = " %Y-%m-%d %H:%M"
+}
