@@ -24,8 +24,9 @@ wireless _first_ {
 
 battery 0 {
   format = "%status %percentage"
-  status_bat = ""
   status_chr = ""
+  status_bat = ""
+  status_unk = ""
   status_full = ""
   low_threshold = 15
 }
