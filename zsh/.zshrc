@@ -21,4 +21,4 @@ alias top='htop'
 alias weather='curl -s wttr.in | head -n -1'
 
 # Python
-source virtualenvwrapper.sh
+source virtualenvwrapper_lazy.sh
