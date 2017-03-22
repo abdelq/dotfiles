@@ -1,10 +1,14 @@
 general {
+	color_good = "#99cc99"
+	color_degraded = "#ffcc66"
+	color_bad = "#f2777a"
+	color_separator = "#747369"
 	interval = 5
 }
 
 order += "volume master"
 order += "battery all"
-# order += "ethernet _first_"
+order += "ethernet _first_"
 order += "wireless _first_"
 order += "cpu_temperature all"
 order += "tztime local"
@@ -27,8 +31,8 @@ battery all {
 }
 
 ethernet _first_ {
-	format_up = "🖧"
-	format_down = "🖧"
+	format_up = "E"
+	format_down = "E"
 }
 
 wireless _first_ {
