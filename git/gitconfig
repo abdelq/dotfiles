@@ -1,0 +1,16 @@
+[user]
+	name = Abdelhakim Qbaich
+	email = abdelhakim@qbaich.com
+	signingkey = 41F282F0
+
+[commit]
+	gpgsign = true
+
+[url "git@github.com:"]
+	insteadOf = github:
+
+[alias]
+	br = branch
+	co = checkout
+	ci = commit
+	st = status
