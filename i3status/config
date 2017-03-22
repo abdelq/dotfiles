@@ -1,16 +1,12 @@
 general {
-	colors = true
-	color_good = "#99cc99"
-	color_degraded = "#ffcc66"
-	color_bad = "#f2777a"
-	separator = " "
 	interval = 5
 }
 
 order += "volume master"
-order += "battery 0"
+order += "battery all"
+# order += "ethernet _first_"
 order += "wireless _first_"
-order += "cpu_temperature 0"
+order += "cpu_temperature all"
 order += "tztime local"
 
 volume master {
@@ -18,13 +14,21 @@ volume master {
 	format_muted = ""
 }
 
-battery 0 {
+battery all {
 	format = "%status %percentage"
-	status_chr = ""
-	status_bat = ""
+	format_down = ""
+	status_chr = "🔌"
 	status_unk = ""
+	status_bat = ""
 	status_full = ""
 	low_threshold = 15
+	threshold_type = percentage
+	integer_battery_capacity = true
+}
+
+ethernet _first_ {
+	format_up = "🖧"
+	format_down = "🖧"
 }
 
 wireless _first_ {
@@ -32,13 +36,12 @@ wireless _first_ {
 	format_down = ""
 }
 
-cpu_temperature 0 {
+cpu_temperature all {
 	format = " %degrees °C"
 	format_above_threshold = " %degrees °C"
 	max_threshold = 87
-	path = "/sys/devices/platform/coretemp.0/hwmon/hwmon0/temp1_input"
 }
 
 tztime local {
-	format = " %Y-%m-%d %H:%M"
+	format = " %Y-%m-%d  %H:%M"
 }
