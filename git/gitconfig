@@ -1,16 +1,19 @@
 [user]
 	name = Abdelhakim Qbaich
 	email = abdelhakim@qbaich.com
-	signingkey = 41F282F0
+	signingKey = 41F282F0
 
-[commit]
-	gpgsign = true
+[push]
+	gpgSign = true
 
 [url "git@github.com:"]
 	insteadOf = github:
 
 [alias]
 	br = branch
-	co = checkout
 	ci = commit
+	co = checkout
+	pl = pull
+	ps = push
+	rb = rebase
 	st = status
