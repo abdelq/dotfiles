@@ -3,9 +3,6 @@
 	email = abdelhakim@qbaich.com
 	signingKey = 41F282F0
 
-[push]
-	gpgSign = true
-
 [url "git@github.com:"]
 	insteadOf = github:
 
