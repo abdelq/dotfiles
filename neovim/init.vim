@@ -1,9 +1,9 @@
 " Option: Moving around, searching and patterns
 set ignorecase
-set smartcase
+"set smartcase
 
 " Option: Displaying text
-set lazyredraw
+"set lazyredraw
 set list
 set number
 set relativenumber
@@ -20,17 +20,17 @@ set splitright
 set title
 
 " Option: Messages and info
-set ruler
+set ruler " TODO Is it required if I use lightline?
 
 " Option: Tabs and indenting
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
-set smartindent
+"set smartindent
 
 " Option: Mapping
-set ttimeout
+"set ttimeout
 
 " Mappings
 let mapleader=','
@@ -40,26 +40,26 @@ map ; :
 call plug#begin()
 Plug 'morhetz/gruvbox'
 Plug 'scrooloose/nerdcommenter'
-Plug 'tpope/vim-surround'
 Plug 'junegunn/vim-easy-align'
+Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
+Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 
-Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
-
-Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
 
-Plug 'python-mode/python-mode', {'for': 'python'}
-Plug 'fatih/vim-go',            {'for': 'go', 'do': ':GoInstallBinaries'}
-Plug 'elixir-lang/vim-elixir',  {'for': 'elixir'}
-Plug 'pangloss/vim-javascript', {'for': 'javascript'}
-Plug 'rust-lang/rust.vim',      {'for': 'rust'}
-Plug 'arrufat/vala.vim',        {'for': 'vala'}
+Plug 'python-mode/python-mode' ", {'for': 'python'}
+Plug 'fatih/vim-go' ",            {'for': 'go', 'do': ':GoInstallBinaries'}
+Plug 'elixir-lang/vim-elixir' ",  {'for': 'elixir'}
+Plug 'pangloss/vim-javascript' ", {'for': 'javascript'}
+Plug 'rust-lang/rust.vim' ",      {'for': 'rust'}
+Plug 'arrufat/vala.vim' ",        {'for': 'vala'}
 call plug#end()
 
 " Plugin: gruvbox
 let g:gruvbox_italic=1
-let g:gruvbox_improved_warnings=1
+let g:gruvbox_invert_signs=1
+"let g:gruvbox_improved_warnings=1
 colorscheme gruvbox
 
 " Plugin: nerdcommenter
@@ -74,27 +74,25 @@ nmap ga <Plug>(EasyAlign)
 
 " Plugin: deoplete.nvim
 let g:deoplete#enable_at_startup=1
-" TODO
-"let g:deoplete#complete_method
-"let g:deoplete#enable_camel_case
-"let g:deoplete#delimiters
-"let g:deoplete#sources
-"let g:deoplete#omni#functions
-"let g:deoplete#file#enable_buffer_path
-"let g:deoplete#buffer#require_same_filetype
 
 " Plugin: vim-gitgutter
-" TODO https://github.com/airblade/vim-gitgutter
-" TODO :help GitGutter
+let g:gitgutter_override_sign_column_highlight=1
 
 " Plugin: python-mode
-" TODO https://github.com/python-mode/python-mode
+let g:pymode_folding=0
+let g:pymode_lint_checkers=['pycodestyle', 'pyflakes']
+let g:pymode_rope=0
+" TODO set $VIRTUAL_ENV
 
 " Plugin: vim-go
-" TODO https://github.com/fatih/vim-go
+"let g:go_snippet_engine='ultisnips'
+" TODO :help vim-go
+" TODO Review mapping section
+" TODO set $GOPATH
 
 " Plugin: vim-javascript
-" TODO https://github.com/pangloss/vim-javascript
+let g:javascript_plugin_jsdoc=1
+let g:javascript_plugin_flow=1
 
 " Plugin: rust.vim
 " TODO https://github.com/rust-lang/rust.vim
@@ -121,16 +119,11 @@ autocmd FileType vala noremap <F8> :CCode<CR>
 
 
 
-
-
-
-
-
-
 "Plug 'zchee/deoplete-jedi'
 "Plug 'Rip-Rip/clang_complete'
 "Plug 'artur-shaik/vim-javacomplete2'
 "Plug 'Shougo/neco-vim'
+" Review filetypes and their settings
 
 "https://github.com/sirver/UltiSnips
 "Plug 'Shougo/neosnippet.vim'
