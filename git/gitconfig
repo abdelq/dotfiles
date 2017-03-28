@@ -8,9 +8,11 @@
 
 [alias]
 	br = branch
-	ci = commit
+	cm = commit
 	co = checkout
+	df = diff
 	pl = pull
 	ps = push
 	rb = rebase
+	sh = show
 	st = status
