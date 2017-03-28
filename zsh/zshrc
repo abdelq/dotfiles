@@ -1,0 +1,44 @@
+# zplug
+source ~/.zsh/zplug/init.zsh
+
+zplug "zplug/zplug", hook-build:"zplug --self-manage"
+
+zplug "zsh-users/zsh-autosuggestions"
+#zplug "zsh-users/zsh-completions"
+zplug "zsh-users/zsh-history-substring-search", defer:3
+zplug "zsh-users/zsh-syntax-highlighting",      defer:2
+
+zplug "~/.zsh/lib",                 from:local
+#zplug "~/.zsh/lib/aliases",        from:local,    lazy:true
+#zplug "~/.zsh/lib/directories",    from:local,    lazy:true
+#zplug "~/.zsh/lib/history",        from:local,    lazy:true
+#zplug "~/.zsh/lib/grep",           from:local,    lazy:true
+
+#zplug "lib/completions",          from:oh-my-zsh, lazy:true
+zplug "lib/key-bindings",          from:oh-my-zsh
+#zplug "lib/misc",                 from:oh-my-zsh
+#zplug "lib/termsupport",          from:oh-my-zsh, lazy:true
+#zplug "lib/theme-and-appearance", from:oh-my-zsh
+
+#zplug "modules/archive",          from:prezto,    lazy:true
+#zplug "modules/editor",           from:prezto
+#zplug "modules/environment",      from:prezto
+#zplug "modules/git",              from:prezto,    lazy:true
+#zplug "modules/gpg",              from:prezto
+#zplug "modules/prompt",           from:prezto
+#zplug "modules/python",           from:prezto,    lazy:true
+#zplug "modules/rsync",            from:prezto,    lazy:true
+#zplug "modules/ssh",              from:prezto,    lazy:true
+#zplug "modules/terminal",         from:prezto
+#zplug "modules/utility",          from:prezto,    lazy:true
+
+zplug "themes/minimal",           from:oh-my-zsh,  lazy:true
+
+if ! zplug check; then
+	zplug install
+fi
+
+zplug load
+
+# virtualenvwrapper
+source virtualenvwrapper_lazy.sh
