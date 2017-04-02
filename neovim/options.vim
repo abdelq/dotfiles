@@ -24,3 +24,6 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 set smartindent
+
+" Folding
+set nofoldenable
