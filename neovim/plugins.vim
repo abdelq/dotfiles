@@ -18,9 +18,12 @@ Plug 'junegunn/fzf',                  {'dir': '~/.fzf', 'do': './install --all'}
 
 Plug 'vim-syntastic/syntastic'
 
+"Plug 'fatih/vim-go',                 {'for': 'go', 'do': ':GoInstallBinaries'}
 "Plug 'python-mode/python-mode',      {'for': 'python'}
 Plug 'pangloss/vim-javascript',       {'for': 'javascript'}
 Plug 'artur-shaik/vim-javacomplete2', {'for': 'java'}
+"Plug 'elixir-lang/vim-elixir',       {'for': 'elixir'}
+"Plug 'vim-ruby/vim-ruby',            {'for': 'ruby'}
 "Plug 'neovimhaskell/haskell-vim',    {'for': 'haskell'}
 "Plug 'rust-lang/rust.vim',           {'for': 'rust'}
 Plug 'arrufat/vala.vim',              {'for': 'vala'}
@@ -83,6 +86,8 @@ let g:NERDSpaceDelims=1
 let g:deoplete#enable_at_startup=1
 
 " Shougo/neosnippet.vim
+let g:neosnippet#snippets_directory='~/.config/nvim/plugged/vim-snippets/snippets'
+let g:neosnippet#enable_snipmate_compatibility=1
 let g:neosnippet#enable_completed_snippet=1
 
 " Shougo/neosnippet-snippets
@@ -100,6 +105,8 @@ let g:gitgutter_override_sign_column_highlight=1
 let g:syntastic_check_on_open=1
 let g:syntastic_check_on_wq=0
 
+" fatih/vim-go
+
 " python-mode/python-mode
 
 " pangloss/vim-javascript
@@ -108,6 +115,10 @@ let g:javascript_plugin_jsdoc=1
 " artur-shaik/vim-javacomplete2
 let g:JavaComplete_UsePython3=1
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
+
+" elixir-lang/vim-elixir
+
+" vim-ruby/vim-ruby
 
 " neovimhaskell/haskell-vim
 
