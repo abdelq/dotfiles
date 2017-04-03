@@ -14,7 +14,8 @@ Plug 'honza/vim-snippets'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
-Plug 'junegunn/fzf',                  {'dir': '~/.fzf', 'do': './install --all'}
+"Plug 'junegunn/fzf',                  {'dir': '~/.fzf', 'do': './install --all'}
+Plug 'junegunn/fzf.vim'
 
 Plug 'vim-syntastic/syntastic'
 
@@ -100,6 +101,8 @@ let g:neosnippet#enable_completed_snippet=1
 let g:gitgutter_override_sign_column_highlight=1
 
 " junegunn/fzf
+
+" junegunn/fzf.vim
 
 " vim-syntastic/syntastic
 let g:syntastic_check_on_open=1

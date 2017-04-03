@@ -1,42 +1,5 @@
-# zplug
-source ~/.zplug/init.zsh
+# Zsh
+source ~/.zplugrc
 
-zplug "zplug/zplug", hook-build:"zplug --self-manage"
-
-zplug "zsh-users/zsh-autosuggestions"
-zplug "zsh-users/zsh-completions"
-zplug "zsh-users/zsh-history-substring-search", defer:3
-zplug "zsh-users/zsh-syntax-highlighting",      defer:2
-
-zplug "~/.zsh/lib", from:local, use:"aliases.zsh"
-zplug "~/.zsh/lib", from:local, use:"directories.zsh"
-zplug "~/.zsh/lib", from:local, use:"history.zsh"
-
-#zplug "lib/completions",          from:oh-my-zsh
-#zplug "lib/key-bindings",         from:oh-my-zsh
-#zplug "lib/misc",                 from:oh-my-zsh
-#zplug "lib/termsupport",          from:oh-my-zsh
-#zplug "lib/theme-and-appearance", from:oh-my-zsh
-
-#zplug "modules/archive",          from:prezto
-#zplug "modules/editor",           from:prezto
-#zplug "modules/environment",      from:prezto
-#zplug "modules/git",              from:prezto
-#zplug "modules/gpg",              from:prezto
-#zplug "modules/prompt",           from:prezto
-#zplug "modules/python",           from:prezto
-#zplug "modules/rsync",            from:prezto
-#zplug "modules/ssh",              from:prezto
-#zplug "modules/terminal",         from:prezto
-#zplug "modules/utility",          from:prezto
-
-#zplug "themes/minimal",           from:oh-my-zsh, lazy:true
-
-if ! zplug check; then
-	zplug install
-fi
-
-zplug load
-
-#source virtualenvwrapper_lazy.sh
-#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# Python
+source virtualenvwrapper_lazy.sh
