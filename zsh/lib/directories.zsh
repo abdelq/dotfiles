@@ -13,17 +13,18 @@ setopt PUSHDMINUS
 alias -- -='cd -'
 #for index ({1..9}) alias "$index"="cd -${index}"; unset index
 
-alias ....='cd ../..'
-alias ......='cd ../../..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
 
 # Make/Remove
-alias md='mkdir -p'
+alias md='mkdir -pv'
 alias rd='rmdir'
 
 # List
-alias ls='ls --color=auto'
-alias ll='ls -lh --color=auto'
-alias la='ls -a --color=auto'
+alias ls='ls --color'
+alias ll='ls -lh --color'
+alias la='ls -A --color'
+#alias lla='ls -lAh --color'
 
 # Stack
 alias d='dirs -v | head -10'
