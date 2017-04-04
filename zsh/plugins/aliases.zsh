@@ -6,7 +6,6 @@ alias top='htop'
 alias grep='grep --color'
 
 # Directories
-
 ## Change
 alias - -='cd -'
 
@@ -14,9 +13,9 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 
 ## List
-alias ls='ls --color'
-alias ll='ls -lh --color'
-alias la='ls -A --color'
+alias ls='ls --color --group-directories-first'
+alias ll='ls -lh --color --group-directories-first'
+alias la='ls -A --color --group-directories-first'
 
 ## Make/Remove
 alias md='mkdir -pv'

@@ -8,28 +8,16 @@ zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-history-substring-search", defer:3
 zplug "zsh-users/zsh-syntax-highlighting",      defer:2
 
-zplug "~/.zsh/plugins",            from:local, use:"aliases.zsh"
-zplug "~/.zsh/plugins",            from:local, use:"directories.zsh"
-zplug "~/.zsh/plugins",            from:local, use:"history.zsh"
-
-#zplug "lib/completions",          from:oh-my-zsh
-#zplug "lib/key-bindings",         from:oh-my-zsh
-#zplug "lib/misc",                 from:oh-my-zsh
-#zplug "lib/termsupport",          from:oh-my-zsh
-#zplug "lib/theme-and-appearance", from:oh-my-zsh
-
-#zplug "modules/editor",           from:prezto
-#zplug "modules/environment",      from:prezto
-#zplug "modules/git",              from:prezto
-#zplug "modules/prompt",           from:prezto
-#zplug "modules/terminal",         from:prezto
-#zplug "modules/utility",          from:prezto
+zplug "~/.zsh/plugins", from:local, use:"aliases.zsh"
+zplug "~/.zsh/plugins", from:local, use:"directories.zsh"
+zplug "~/.zsh/plugins", from:local, use:"history.zsh"
+zplug "~/.zsh/plugins", from:local, use:"completion.zsh"
 
 # Themes
-zplug "~/.zsh/themes",             from:local, use:"minimal.zsh", as:theme
+zplug "~/.zsh/themes", from:local, use:"minimal.zsh", as:theme
 
 # Commands
-zplug "junegunn/fzf-bin",          from:gh-r, as:command, rename-to:fzf
+zplug "junegunn/fzf-bin", from:gh-r, as:command, rename-to:fzf
 
 if ! zplug check; then
 	zplug install
