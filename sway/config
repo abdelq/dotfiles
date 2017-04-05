@@ -2,9 +2,9 @@
 ## Keys
 set $mod Mod4
 
-set $left  h
-set $down  j
-set $up    k
+set $left h
+set $down j
+set $up k
 set $right l
 
 ## Applications
@@ -30,7 +30,6 @@ set $base0E #cc99cc
 set $base0F #d27b53
 
 # Key Bindings
-
 ## Basics
 bindsym $mod+Return exec $term
 bindsym $mod+d exec $menu
@@ -103,14 +102,22 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+## Miscellaneous
+bindsym XF86AudioRaiseVolume exec pamixer -ui 5
+bindsym XF86AudioLowerVolume exec pamixer -ud 5
+bindsym XF86AudioMute exec pamixer -t
+
+#bindsym XF86MonBrightnessUp exec xbacklight + 5
+#bindsym XF86MonBrightnessDown exec xbacklight - 5
+
 # Status Bar
 bar {
 	status_command i3status
 	position top
-	#font
+	font Source Code Pro 9
 	colors {
 		background $base00
-		statusline $base04
+		statusline $base05
 		separator  $base01
 
 		focused_workspace  $base05 $base0D $base00
