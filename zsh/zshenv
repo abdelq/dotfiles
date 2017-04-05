@@ -4,4 +4,4 @@ export EDITOR="nvim"
 export GOPATH="$HOME/.go"
 
 # Miscellaneous
-export XDG_RUNTIME_DIR=/run/user/$UID
+export XDG_RUNTIME_DIR=/run/user/$UID # Fixes issues
