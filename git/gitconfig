@@ -8,7 +8,7 @@
 
 [alias]
 	br = branch
-	cm = commit -m
+	cm = commit
 	co = checkout
 	df = diff
 	pl = pull
