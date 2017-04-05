@@ -2,3 +2,6 @@ export EDITOR="nvim"
 
 # Go
 export GOPATH="$HOME/.go"
+
+# Miscellaneous
+export XDG_RUNTIME_DIR=/run/user/$UID
