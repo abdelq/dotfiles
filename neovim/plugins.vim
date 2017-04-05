@@ -20,7 +20,7 @@ Plug 'vim-syntastic/syntastic'
 
 "Plug 'fatih/vim-go',                 {'for': 'go', 'do': ':GoInstallBinaries'}
 "Plug 'python-mode/python-mode',      {'for': 'python'}
-Plug 'pangloss/vim-javascript',       {'for': 'javascript'}
+"Plug 'pangloss/vim-javascript',      {'for': 'javascript'}
 Plug 'artur-shaik/vim-javacomplete2', {'for': 'java'}
 "Plug 'elixir-lang/vim-elixir',       {'for': 'elixir'}
 "Plug 'vim-ruby/vim-ruby',            {'for': 'ruby'}
@@ -100,7 +100,6 @@ let g:syntastic_check_on_wq=0
 " python-mode/python-mode
 
 " pangloss/vim-javascript
-let g:javascript_plugin_jsdoc=1
 
 " artur-shaik/vim-javacomplete2
 let g:JavaComplete_UsePython3=1
