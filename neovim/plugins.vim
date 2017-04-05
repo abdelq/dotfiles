@@ -26,7 +26,6 @@ Plug 'artur-shaik/vim-javacomplete2', {'for': 'java'}
 "Plug 'vim-ruby/vim-ruby',            {'for': 'ruby'}
 "Plug 'neovimhaskell/haskell-vim',    {'for': 'haskell'}
 "Plug 'rust-lang/rust.vim',           {'for': 'rust'}
-Plug 'arrufat/vala.vim',              {'for': 'vala'}
 "Plug 'lervag/vimtex',                {'for': 'tex'}
 call plug#end()
 
@@ -114,8 +113,5 @@ autocmd FileType java setlocal omnifunc=javacomplete#Complete
 " neovimhaskell/haskell-vim
 
 " rust-lang/rust.vim
-
-" arrufat/vala.vim
-autocmd FileType vala ValaCodingStyle
 
 " lervag/vimtex
