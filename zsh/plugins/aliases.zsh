@@ -34,3 +34,4 @@ alias history='fc -il 1'
 # Miscellaneous
 alias update='sudo aura -Syu && sudo aura -Ayu'
 alias weather='curl -s wttr.in | head -n -3'
+alias rot13='tr a-zA-Z n-za-mN-ZA-M'
