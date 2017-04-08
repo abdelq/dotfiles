@@ -4,6 +4,7 @@ alias vim='nvim'
 alias top='htop'
 
 alias grep='grep --color'
+alias diff='diff --color'
 
 # Directories
 ## Change
