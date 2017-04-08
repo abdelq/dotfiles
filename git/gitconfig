@@ -12,11 +12,8 @@
 [status]
 	showUntrackedFiles = all
 
-[merge]
-	conflictstyle = diff3
-
 [transfer]
-	fsckobjects = true
+	fsckObjects = true
 
 [url "git@github.com:"]
 	insteadOf = github:
