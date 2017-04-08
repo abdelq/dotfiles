@@ -2,7 +2,7 @@ general {
 	color_good = "#99cc99"
 	color_degraded = "#ffcc66"
 	color_bad = "#f2777a"
-	color_separator = "#747369"
+	separator = " "
 	interval = 5
 }
 
