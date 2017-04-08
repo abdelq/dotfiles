@@ -1,1 +1,0 @@
-/home/julius/Workspace/dotfiles/sway/config.d

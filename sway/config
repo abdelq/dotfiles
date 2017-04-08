@@ -148,3 +148,5 @@ client.focused_inactive $base01 $base01 $base07 $base01 $base01
 client.unfocused        $base02 $base02 $base07 $base02 $base02
 client.urgent           $base08 $base08 $base00 $base08 $base08
 client.placeholder      $base00 $base00 $base07 $base00 $base00
+
+include ~/.config/sway/config.d/rules
