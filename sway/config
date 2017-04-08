@@ -7,10 +7,6 @@ set $down j
 set $up k
 set $right l
 
-## Applications
-set $term urxvt
-set $menu rofi -show run
-
 ## Colors
 set $base00 #2d2d2d
 set $base01 #393939
@@ -28,6 +24,12 @@ set $base0C #66cccc
 set $base0D #6699cc
 set $base0E #cc99cc
 set $base0F #d27b53
+
+## Applications
+set $term urxvt
+set $menu rofi -show run
+set $lock swaylock -uc 000000
+set $grab swaygrab ~/Images/Screenshots/$(date +"%Y-%m-%d_%H:%M:%S.png")
 
 # Key Bindings
 ## Basics
@@ -51,28 +53,18 @@ bindsym $mod+Shift+$down move down
 bindsym $mod+Shift+$up move up
 bindsym $mod+Shift+$right move right
 
-## Workspaces
-bindsym $mod+1 workspace I
-bindsym $mod+2 workspace II
-bindsym $mod+3 workspace III
-bindsym $mod+4 workspace IV
-bindsym $mod+5 workspace V
-bindsym $mod+6 workspace VI
-bindsym $mod+7 workspace VII
-bindsym $mod+8 workspace VIII
-bindsym $mod+9 workspace IX
-bindsym $mod+0 workspace X
+## Resizing
+mode "resize" {
+	bindsym $left resize shrink width 10 px or 10 ppt
+	bindsym $down resize grow height 10 px or 10 ppt
+	bindsym $up resize shrink height 10 px or 10 ppt
+	bindsym $right resize grow width 10 px or 10 ppt
 
-bindsym $mod+Shift+1 move container to workspace I
-bindsym $mod+Shift+2 move container to workspace II
-bindsym $mod+Shift+3 move container to workspace III
-bindsym $mod+Shift+4 move container to workspace IV
-bindsym $mod+Shift+5 move container to workspace V
-bindsym $mod+Shift+6 move container to workspace VI
-bindsym $mod+Shift+7 move container to workspace VII
-bindsym $mod+Shift+8 move container to workspace VIII
-bindsym $mod+Shift+9 move container to workspace IX
-bindsym $mod+Shift+0 move container to workspace X
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+}
+
+bindsym $mod+r mode "resize"
 
 ## Layout
 bindsym $mod+b splith
@@ -89,48 +81,70 @@ bindsym $mod+space focus mode_toggle
 
 bindsym $mod+a focus parent
 
-## Resizing
-mode "resize" {
-	bindsym $left resize shrink width 10 px or 10 ppt
-	bindsym $down resize grow height 10 px or 10 ppt
-	bindsym $up resize shrink height 10 px or 10 ppt
-	bindsym $right resize grow width 10 px or 10 ppt
+## Workspaces
+bindsym $mod+1 workspace 1:I
+bindsym $mod+2 workspace 2:II
+bindsym $mod+3 workspace 3:III
+bindsym $mod+4 workspace 4:IV
+bindsym $mod+5 workspace 5:V
+bindsym $mod+6 workspace 6:VI
+bindsym $mod+7 workspace 7:VII
+bindsym $mod+8 workspace 8:VIII
+bindsym $mod+9 workspace 9:IX
+bindsym $mod+0 workspace 10:X
 
-	bindsym Return mode "default"
-	bindsym Escape mode "default"
-}
-
-bindsym $mod+r mode "resize"
+bindsym $mod+Shift+1 move container to workspace 1:I
+bindsym $mod+Shift+2 move container to workspace 2:II
+bindsym $mod+Shift+3 move container to workspace 3:III
+bindsym $mod+Shift+4 move container to workspace 4:IV
+bindsym $mod+Shift+5 move container to workspace 5:V
+bindsym $mod+Shift+6 move container to workspace 6:VI
+bindsym $mod+Shift+7 move container to workspace 7:VII
+bindsym $mod+Shift+8 move container to workspace 8:VIII
+bindsym $mod+Shift+9 move container to workspace 9:IX
+bindsym $mod+Shift+0 move container to workspace 10:X
 
 ## Miscellaneous
+### Audio
 bindsym XF86AudioRaiseVolume exec pamixer -ui 5
 bindsym XF86AudioLowerVolume exec pamixer -ud 5
 bindsym XF86AudioMute exec pamixer -t
+bindsym XF86AudioMicMute exec pamixer --source 1 -t
 
-#bindsym XF86MonBrightnessUp exec xbacklight + 5
-#bindsym XF86MonBrightnessDown exec xbacklight - 5
+bindsym XF86AudioPlay exec cmus-remote -u
+bindsym XF86AudioStop exec cmus-remote -s
+bindsym XF86AudioPrev exec cmus-remote -r
+bindsym XF86AudioNext exec cmus-remote -n
+
+bindsym XF86Launch1 exec $menu
+bindsym XF86ScreenSaver exec $lock
+bindsym Print exec $grab
 
 # Status Bar
 bar {
 	status_command i3status
 	position top
-	font Source Code Pro 9
+	strip_workspace_numbers yes
+
 	colors {
 		background $base00
-		statusline $base05
-		separator  $base01
+		statusline $base07
+		separator $base00
 
-		focused_workspace  $base05 $base0D $base00
-		active_workspace   $base05 $base03 $base00
-		inactive_workspace $base03 $base01 $base05
+		focused_workspace  $base0D $base0D $base00
+		active_workspace   $base02 $base02 $base07
+		inactive_workspace $base01 $base01 $base07
 		urgent_workspace   $base08 $base08 $base00
-		binding_mode       $base00 $base0A $base00
+		binding_mode       $base0A $base0A $base00
 	}
 }
 
+# Miscellaneous
+font Source Code Pro 9
+
 client.background               $base07
-client.focused          $base05 $base0D $base00 $base0D $base0D
-client.focused_inactive $base01 $base01 $base05 $base03 $base01
-client.unfocused        $base01 $base00 $base05 $base01 $base01
+client.focused          $base0D $base0D $base00 $base0D $base0D
+client.focused_inactive $base01 $base01 $base07 $base01 $base01
+client.unfocused        $base02 $base02 $base07 $base02 $base02
 client.urgent           $base08 $base08 $base00 $base08 $base08
-client.placeholder      $base00 $base00 $base05 $base00 $base00
+client.placeholder      $base00 $base00 $base07 $base00 $base00
