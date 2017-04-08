@@ -3,6 +3,21 @@
 	email = abdelhakim@qbaich.com
 	signingKey = 41F282F0
 
+[commit]
+	gpgSign = true
+
+[push]
+	followTags = true
+
+[status]
+	showUntrackedFiles = all
+
+[merge]
+	conflictstyle = diff3
+
+[transfer]
+	fsckobjects = true
+
 [url "git@github.com:"]
 	insteadOf = github:
 
