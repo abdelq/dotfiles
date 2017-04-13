@@ -1,4 +1,5 @@
 export EDITOR="nvim"
+export PAGER="less"
 
 # Go
 export GOPATH="$HOME/.go"
