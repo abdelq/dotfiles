@@ -12,6 +12,7 @@ zplug "~/.zsh/plugins", from:local, use:"aliases.zsh"
 zplug "~/.zsh/plugins", from:local, use:"directories.zsh"
 zplug "~/.zsh/plugins", from:local, use:"history.zsh"
 zplug "~/.zsh/plugins", from:local, use:"completion.zsh"
+zplug "~/.zsh/plugins", from:local, use:"key-bindings.zsh"
 
 # Themes
 zplug "~/.zsh/themes", from:local, use:"minimal.zsh", as:theme
