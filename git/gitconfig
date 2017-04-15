@@ -1,7 +1,7 @@
 [user]
 	name = Abdelhakim Qbaich
 	email = abdelhakim@qbaich.com
-	signingKey = 41F282F0
+	signingKey = 93FA4A4141F282F0
 
 [commit]
 	gpgSign = true
