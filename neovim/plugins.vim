@@ -14,14 +14,15 @@ Plug 'honza/vim-snippets'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
-"Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 
 Plug 'vim-syntastic/syntastic'
 
 "Plug 'fatih/vim-go',                 {'for': 'go', 'do': ':GoInstallBinaries'}
 "Plug 'python-mode/python-mode',      {'for': 'python'}
 "Plug 'pangloss/vim-javascript',      {'for': 'javascript'}
-Plug 'artur-shaik/vim-javacomplete2' ", {'for': 'java'}
+Plug 'artur-shaik/vim-javacomplete2', {'for': 'java'}
 "Plug 'elixir-lang/vim-elixir',       {'for': 'elixir'}
 "Plug 'vim-ruby/vim-ruby',            {'for': 'ruby'}
 "Plug 'neovimhaskell/haskell-vim',    {'for': 'haskell'}
@@ -35,7 +36,7 @@ let g:gruvbox_invert_signs=1
 colorscheme gruvbox
 
 " itchyny/lightline.vim
-let g:lightline = {
+let g:lightline={
 	\'colorscheme': 'gruvbox',
 	\'active': {
 		\'left': [
@@ -77,6 +78,22 @@ let g:neosnippet#enable_snipmate_compatibility=1
 
 " airblade/vim-gitgutter
 let g:gitgutter_override_sign_column_highlight=1
+
+" junegunn/fzf.vim
+let g:fzf_colors={
+	\'fg':      ['fg', 'Normal'],
+	\'bg':      ['bg', 'Normal'],
+	\'hl':      ['fg', 'Comment'],
+	\'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+	\'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+	\'hl+':     ['fg', 'Statement'],
+	\'info':    ['fg', 'PreProc'],
+	\'prompt':  ['fg', 'Conditional'],
+	\'pointer': ['fg', 'Exception'],
+	\'marker':  ['fg', 'Keyword'],
+	\'spinner': ['fg', 'Label'],
+	\'header':  ['fg', 'Comment']
+\}
 
 " vim-syntastic/syntastic
 let g:syntastic_check_on_open=1
