@@ -15,10 +15,7 @@ zplug "~/.zsh/plugins", from:local, use:"completion.zsh"
 zplug "~/.zsh/plugins", from:local, use:"key-bindings.zsh"
 
 # Themes
-zplug "~/.zsh/themes", from:local, use:"minimal.zsh", as:theme
-
-# Commands
-zplug "junegunn/fzf-bin", from:gh-r, as:command, rename-to:fzf
+zplug "~/.zsh/themes", from:local, use:"custom.zsh", as:theme
 
 if ! zplug check; then
 	zplug install

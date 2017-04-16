@@ -6,4 +6,4 @@ export GOPATH="$HOME/.go"
 
 # Miscellaneous
 export KEYTIMEOUT=10
-export XDG_RUNTIME_DIR=/run/user/$UID # Fixes issues
+export XDG_RUNTIME_DIR="/run/user/$UID" # Fixes various issues
