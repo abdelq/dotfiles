@@ -2,7 +2,7 @@ general {
 	color_good = "#99cc99"
 	color_degraded = "#ffcc66"
 	color_bad = "#f2777a"
-	separator = " "
+	separator = "  "
 	interval = 5
 }
 
@@ -28,6 +28,7 @@ battery all {
 	low_threshold = 15
 	threshold_type = percentage
 	integer_battery_capacity = true
+	last_full_capacity = true
 }
 
 ethernet _first_ {
