@@ -12,3 +12,6 @@ map ; :
 " junegunn/vim-easy-align
 vmap <Enter> <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
+
+" junegunn/fzf.vim
+nmap <C-P> :Files<CR>

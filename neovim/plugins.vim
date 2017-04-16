@@ -19,15 +19,9 @@ Plug 'junegunn/fzf.vim'
 
 Plug 'vim-syntastic/syntastic'
 
-"Plug 'fatih/vim-go',                 {'for': 'go', 'do': ':GoInstallBinaries'}
-"Plug 'python-mode/python-mode',      {'for': 'python'}
-"Plug 'pangloss/vim-javascript',      {'for': 'javascript'}
+Plug 'fatih/vim-go',                  {'for': 'go', 'do': ':GoInstallBinaries'}
+Plug 'pangloss/vim-javascript',       {'for': 'javascript'}
 Plug 'artur-shaik/vim-javacomplete2', {'for': 'java'}
-"Plug 'elixir-lang/vim-elixir',       {'for': 'elixir'}
-"Plug 'vim-ruby/vim-ruby',            {'for': 'ruby'}
-"Plug 'neovimhaskell/haskell-vim',    {'for': 'haskell'}
-"Plug 'rust-lang/rust.vim',           {'for': 'rust'}
-"Plug 'lervag/vimtex',                {'for': 'tex'}
 call plug#end()
 
 " morhetz/gruvbox
@@ -98,6 +92,15 @@ let g:fzf_colors={
 " vim-syntastic/syntastic
 let g:syntastic_check_on_open=1
 let g:syntastic_check_on_wq=0
+
+" fatih/vim-go
+let g:go_auto_type_info=1
+let g:go_updatetime=500
+let g:go_snippet_engine='neosnippet'
+let g:go_get_update=0
+
+" pangloss/vim-javascript
+let g:javascript_plugin_jsdoc=1
 
 " artur-shaik/vim-javacomplete2
 let g:JavaComplete_UsePython3=1
