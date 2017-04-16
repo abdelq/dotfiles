@@ -28,7 +28,7 @@ set $base0F #d27b53
 ## Applications
 set $term urxvt
 set $menu rofi -show run
-set $lock swaylock -uc 000000
+set $lock swaylock -c 000000
 set $grab swaygrab ~/Images/Screenshots/$(date +"%Y-%m-%d_%H:%M:%S.png")
 
 # Key Bindings
