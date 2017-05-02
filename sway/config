@@ -122,8 +122,8 @@ bindsym $mod+Shift+9 move container to workspace 9:IX
 bindsym $mod+Shift+0 move container to workspace 10:X
 
 ## Audio
-bindsym XF86AudioRaiseVolume exec pamixer -ui 5
-bindsym XF86AudioLowerVolume exec pamixer -ud 5
+bindsym XF86AudioRaiseVolume exec pamixer -ui 2
+bindsym XF86AudioLowerVolume exec pamixer -ud 2
 bindsym XF86AudioMute exec pamixer -t
 bindsym XF86AudioMicMute exec pamixer --source 1 -t
 
