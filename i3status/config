@@ -25,7 +25,7 @@ battery all {
 	status_unk = ""
 	status_bat = ""
 	status_full = ""
-	low_threshold = 15
+	low_threshold = 20
 	threshold_type = percentage
 	integer_battery_capacity = true
 	last_full_capacity = true
