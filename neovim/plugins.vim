@@ -5,6 +5,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'junegunn/vim-easy-align'
 Plug 'tpope/vim-surround'
+Plug 'terryma/vim-multiple-cursors'
 
 Plug 'Shougo/deoplete.nvim',          {'do': ':UpdateRemotePlugins'}
 Plug 'Shougo/neosnippet.vim'
@@ -20,8 +21,10 @@ Plug 'junegunn/fzf.vim'
 Plug 'vim-syntastic/syntastic'
 
 Plug 'fatih/vim-go',                  {'for': 'go', 'do': ':GoInstallBinaries'}
+Plug 'elixir-lang/vim-elixir',        {'for': 'elixir'}
 Plug 'pangloss/vim-javascript',       {'for': 'javascript'}
 Plug 'artur-shaik/vim-javacomplete2', {'for': 'java'}
+Plug 'neovimhaskell/haskell-vim',     {'for': 'haskell'}
 call plug#end()
 
 " morhetz/gruvbox
