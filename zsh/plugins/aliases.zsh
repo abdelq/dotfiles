@@ -1,11 +1,3 @@
-alias vi="vim"
-alias vim="nvim"
-
-alias top="htop"
-
-alias grep="grep --color"
-alias diff="diff --color"
-
 # Directories
 ## Change
 alias - -="cd -"
@@ -33,5 +25,14 @@ alias h="history"
 alias history="fc -il 1"
 
 # Miscellaneous
-alias update="sudo aura -Syu && sudo aura -Ayu"
+alias vi="vim"
+alias vim="nvim"
+alias top="htop"
+alias firefox="palemoon"
+
+alias grep="grep --color"
+alias diff="diff --color"
+alias du="du -h"
+
+alias update="sudo aura -Syu && sudo aura -Au"
 alias weather="curl -s wttr.in | head -n -3"

@@ -9,9 +9,10 @@ zplug "zsh-users/zsh-history-substring-search", defer:3
 zplug "zsh-users/zsh-syntax-highlighting",      defer:2
 
 zplug "~/.zsh/plugins", from:local, use:"aliases.zsh"
+zplug "~/.zsh/plugins", from:local, use:"battery.zsh"
+zplug "~/.zsh/plugins", from:local, use:"completion.zsh"
 zplug "~/.zsh/plugins", from:local, use:"directories.zsh"
 zplug "~/.zsh/plugins", from:local, use:"history.zsh"
-zplug "~/.zsh/plugins", from:local, use:"completion.zsh"
 zplug "~/.zsh/plugins", from:local, use:"key-bindings.zsh"
 
 # Themes
