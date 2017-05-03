@@ -18,6 +18,9 @@ set splitright
 " Terminal
 set title
 
+" Using the mouse
+set mouse=a
+
 " Tabs and indenting
 set tabstop=4
 set shiftwidth=4
