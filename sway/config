@@ -141,7 +141,7 @@ floating_modifier $mod normal
 
 # Status Bar
 bar {
-	status_command i3status
+	status_command i3blocks
 	position top
 	strip_workspace_numbers yes
 
