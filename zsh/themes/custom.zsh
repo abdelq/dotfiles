@@ -10,11 +10,5 @@ ZSH_THEME_VIM_PROMPT_SUFFIX="%{$reset_color%}]"
 ZSH_THEME_VIM_PROMPT_NORMAL="N"
 ZSH_THEME_VIM_PROMPT_INSERT="I"
 
-# Battery
-ZSH_THEME_BATTERY_PROMPT_PREFIX="["
-ZSH_THEME_BATTERY_PROMPT_SUFFIX="%{$reset_color%}]"
-ZSH_THEME_BATTERY_PROMPT_CHARGING="C "
-ZSH_THEME_BATTERY_PROMPT_BATTERY="B "
-
 PROMPT='%2~ » '
-RPROMPT='$(git_prompt_info) $(vim_prompt_info) $(battery_prompt_info)'
+RPROMPT='$(git_prompt_info) $(vim_prompt_info)'

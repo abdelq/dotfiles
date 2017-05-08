@@ -1,10 +1,9 @@
 # Go
 export GOPATH="$HOME/.go"
+export PATH="$PATH:$GOPATH/bin"
 
 # Miscellaneous
 export EDITOR="nvim"
 export PAGER="less"
-
-export PATH="$PATH:$GOPATH/bin"
 
 export KEYTIMEOUT=10

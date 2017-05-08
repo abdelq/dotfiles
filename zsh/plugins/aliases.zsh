@@ -28,7 +28,6 @@ alias history="fc -il 1"
 alias vi="vim"
 alias vim="nvim"
 alias top="htop"
-alias firefox="palemoon"
 
 alias grep="grep --color"
 alias diff="diff --color"
