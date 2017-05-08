@@ -1,0 +1,29 @@
+[global]
+    font = Source Code Pro 10
+    markup = full
+    format = "<b>%s</b>\n%b"
+    word_wrap = yes
+    geometry = "256x4-0+20"
+    show_indicators = no
+    separator_height = 0
+    padding = 5
+    horizontal_padding = 5
+
+[shortcuts]
+    close = mod1+Escape
+    close_all = mod1+shift+Escape
+    history = mod1+grave
+
+[urgency_low]
+    background = "#cc99cc"
+    foreground = "#393939"
+
+[urgency_normal]
+    background = "#6699cc"
+    foreground = "#393939"
+
+[urgency_critical]
+    background = "#f2777a"
+    foreground = "#393939"
+
+# vim: filetype=cfg
