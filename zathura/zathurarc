@@ -2,36 +2,36 @@
 set default-fg              "#ffffff"
 
 ## Bars
-set statusbar-bg            "#2d2d2d"
-set statusbar-fg            "#f2f0ec"
-set inputbar-bg             "#393939"
-set inputbar-fg             "#f2f0ec"
+set statusbar-bg            "#282828"
+set statusbar-fg            "#fbf1c7"
+set inputbar-bg             "#3c3836"
+set inputbar-fg             "#fbf1c7"
 
 ## Highlight
-set highlight-color         "#ffcc66"
-set highlight-active-color  "#6699cc"
+set highlight-color         "#fabd2f"
+set highlight-active-color  "#83a598"
 
 ## Completion
-set completion-bg           "#393939"
-set completion-fg           "#f2f0ec"
-set completion-group-bg     "#2d2d2d"
-set completion-group-fg     "#f2f0ec"
-set completion-highlight-bg "#6699cc"
-set completion-highlight-fg "#2d2d2d"
+set completion-bg           "#3c3836"
+set completion-fg           "#fbf1c7"
+set completion-group-bg     "#282828"
+set completion-group-fg     "#fbf1c7"
+set completion-highlight-bg "#83a598"
+set completion-highlight-fg "#282828"
 
 ## Notification
-set notification-bg         "#393939"
-set notification-fg         "#f2f0ec"
-set notification-warning-bg "#ffcc66"
-set notification-warning-fg "#2d2d2d"
-set notification-error-bg   "#f2777a"
-set notification-error-fg   "#2d2d2d"
+set notification-bg         "#3c3836"
+set notification-fg         "#fbf1c7"
+set notification-warning-bg "#fabd2f"
+set notification-warning-fg "#282828"
+set notification-error-bg   "#fb4934"
+set notification-error-fg   "#282828"
 
 ## Index
-set index-bg                "#393939"
-set index-fg                "#f2f0ec"
-set index-active-bg         "#6699cc"
-set index-active-fg         "#2d2d2d"
+set index-bg                "#3c3836"
+set index-fg                "#fbf1c7"
+set index-active-bg         "#83a598"
+set index-active-fg         "#282828"
 
 # Miscellaneous
 set font "Source Code Pro 9"

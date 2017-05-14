@@ -10,20 +10,20 @@
     horizontal_padding = 5
 
 [shortcuts]
-    close = mod1+Escape
-    close_all = mod1+shift+Escape
-    history = mod1+grave
+    close = mod4+Escape
+    close_all = mod4+shift+Escape
+    history = mod4+grave
 
 [urgency_low]
-    background = "#cc99cc"
-    foreground = "#393939"
+    background = "#98971a"
+    foreground = "#fbf1c7"
 
 [urgency_normal]
-    background = "#6699cc"
-    foreground = "#393939"
+    background = "#d79921"
+    foreground = "#fbf1c7"
 
 [urgency_critical]
-    background = "#f2777a"
-    foreground = "#393939"
+    background = "#cc241d"
+    foreground = "#fbf1c7"
 
 # vim: filetype=cfg
