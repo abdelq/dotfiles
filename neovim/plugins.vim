@@ -5,7 +5,6 @@ Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'junegunn/vim-easy-align'
 Plug 'tpope/vim-surround'
-Plug 'terryma/vim-multiple-cursors'
 
 Plug 'Shougo/deoplete.nvim',          {'do': ':UpdateRemotePlugins'}
 Plug 'Shougo/neosnippet.vim'
@@ -15,8 +14,7 @@ Plug 'honza/vim-snippets'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
-Plug 'junegunn/fzf'
-Plug 'junegunn/fzf.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 
 Plug 'vim-syntastic/syntastic'
 
@@ -64,7 +62,6 @@ endfunction
 
 " scrooloose/nerdcommenter
 let g:NERDCommentWholeLinesInVMode=1
-let g:NERDSpaceDelims=1
 
 " Shougo/deoplete.nvim
 let g:deoplete#enable_at_startup=1
@@ -75,22 +72,6 @@ let g:neosnippet#enable_snipmate_compatibility=1
 
 " airblade/vim-gitgutter
 let g:gitgutter_override_sign_column_highlight=1
-
-" junegunn/fzf.vim
-let g:fzf_colors={
-	\'fg':      ['fg', 'Normal'],
-	\'bg':      ['bg', 'Normal'],
-	\'hl':      ['fg', 'Comment'],
-	\'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
-	\'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
-	\'hl+':     ['fg', 'Statement'],
-	\'info':    ['fg', 'PreProc'],
-	\'prompt':  ['fg', 'Conditional'],
-	\'pointer': ['fg', 'Exception'],
-	\'marker':  ['fg', 'Keyword'],
-	\'spinner': ['fg', 'Label'],
-	\'header':  ['fg', 'Comment']
-\}
 
 " vim-syntastic/syntastic
 let g:syntastic_check_on_open=1
