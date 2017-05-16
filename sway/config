@@ -27,8 +27,8 @@ set $base0F #d27b53
 
 ## Applications
 set $term urxvt
-set $menu rofi -show run
-set $lock swaylock -c 000000
+set $menu dmenu_run
+set $lock slock
 set $grab swaygrab ~/Images/Screenshots/$(date +"%Y-%m-%d_%H:%M:%S.png")
 
 # Key Bindings
@@ -87,6 +87,7 @@ bindsym $mod+r mode "resize"
 bindsym $mod+b splith
 bindsym $mod+v splitv
 
+bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
@@ -167,5 +168,3 @@ client.focused_inactive $base01 $base01 $base07 $base01 $base01
 client.unfocused        $base02 $base02 $base07 $base02 $base02
 client.urgent           $base08 $base08 $base00 $base08 $base08
 client.placeholder      $base00 $base00 $base07 $base00 $base00
-
-include ~/.config/sway/config.d/rules
