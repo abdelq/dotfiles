@@ -36,6 +36,15 @@ input "2:7:SynPS/2_Synaptics_TouchPad" {
 	tap enabled
 }
 
+input "1133:49256:Logitec" {
+	accel_profile flat
+	pointer_accel 0
+}
+
+# Outputs
+output LVDS-2 pos 0,0 res 1366x768 bg ~/Images/wallpaper.jpg fill
+output VGA-2 pos 0,-1024 res 1280x1024
+
 # Key Bindings
 ## Basics
 bindsym $mod+Return exec $term
@@ -138,11 +147,16 @@ bindsym XF86AudioStop exec cmus-remote -s
 bindsym XF86AudioPrev exec cmus-remote -r
 bindsym XF86AudioNext exec cmus-remote -n
 
+## Video
+bindsym XF86MonBrightnessUp exec brightnessctl set +2%
+bindsym XF86MonBrightnessDown exec brightnessctl set 2%-
+
 ## Miscellaneous
 bindsym XF86Launch1 exec $menu
 bindsym XF86ScreenSaver exec $lock
 bindsym Print exec $grab
 
+floating_minimum_size 512 x 256
 floating_modifier $mod normal
 
 # Status Bar
@@ -166,7 +180,7 @@ bar {
 
 # Miscellaneous
 font Source Code Pro 9
-default_border pixel 3
+default_border pixel 2
 
 client.background               $base07
 client.focused          $base0D $base0D $base00 $base0D $base0D
