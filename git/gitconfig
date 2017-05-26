@@ -3,9 +3,6 @@
 	email = abdelhakim@qbaich.com
 	signingKey = 93FA4A4141F282F0
 
-[commit]
-	gpgSign = true
-
 [push]
 	followTags = true
 

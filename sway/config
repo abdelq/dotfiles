@@ -28,8 +28,13 @@ set $base0F #d27b53
 ## Applications
 set $term urxvt
 set $menu dmenu_run
-set $lock slock
+set $lock swaylock -uc 000000
 set $grab swaygrab ~/Images/Screenshots/$(date +"%Y-%m-%d_%H:%M:%S.png")
+
+# Inputs
+input "2:7:SynPS/2_Synaptics_TouchPad" {
+	tap enabled
+}
 
 # Key Bindings
 ## Basics
@@ -142,7 +147,7 @@ floating_modifier $mod normal
 
 # Status Bar
 bar {
-	status_command i3blocks
+	status_command i3status
 	position top
 	strip_workspace_numbers yes
 
@@ -161,6 +166,7 @@ bar {
 
 # Miscellaneous
 font Source Code Pro 9
+default_border pixel 3
 
 client.background               $base07
 client.focused          $base0D $base0D $base00 $base0D $base0D

@@ -35,7 +35,6 @@ set index-active-fg         "#282828"
 
 # Miscellaneous
 set font "Source Code Pro 10"
-set selection-clipboard clipboard
 set window-title-home-tilde true
 set statusbar-basename true
 set adjust-open "width"
