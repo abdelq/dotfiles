@@ -30,3 +30,6 @@ set smartindent
 
 " Folding
 set nofoldenable
+
+" The swap file
+set noswapfile
