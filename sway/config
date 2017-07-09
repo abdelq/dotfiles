@@ -26,7 +26,7 @@ set $base0E #cc99cc
 set $base0F #d27b53
 
 ## Applications
-set $term urxvt
+set $term st
 set $menu dmenu_run
 set $lock swaylock -uc 000000
 set $grab swaygrab ~/Images/Screenshots/$(date +"%Y-%m-%d_%H:%M:%S.png")
