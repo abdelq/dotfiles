@@ -1,7 +1,6 @@
-# Formats
-set format_current= %a - %l %= %n. %t 
-set format_title=%n. %t | %a - %l
-set format_trackwin=%3n %t %= %d 
-set format_treewin= %l
+set format_current= %a - %l%=%02n. %t 
+set format_trackwin= %02n. %t%=%d 
+set format_trackwin_album= %l %=%{?y? %y} 
 
 set mouse=true
+set set_term_title=false
