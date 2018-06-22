@@ -1,0 +1,46 @@
+[core]
+	compression = -1
+
+[column]
+	status = auto
+	tag = auto dense
+
+[diff]
+	algorithm = histogram
+	colorMoved = true
+	renames = copies
+
+[include]
+	path = user.inc
+
+[pack]
+	threads = 0
+
+[pull]
+	rebase = preserve
+
+[push]
+	default = upstream
+
+[rebase]
+	abbreviateCommands = true
+	missingCommitsCheck = error
+
+[tag]
+	sort = version:refname
+
+[transfer]
+	fsckObjects = true
+
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+	insteadOf = github:
+
+[url "git@gitlab.com:"]
+	insteadOf = https://gitlab.com/
+	insteadOf = gitlab:
+
+[versionsort]
+	suffix = -alpha
+	suffix = -beta
+	suffix = -rc
