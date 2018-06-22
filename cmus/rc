@@ -1,8 +1,8 @@
 # Formats
 set format_current= %a - %l%=%02n. %t 
+set format_title=%a - %t
 set format_trackwin= %02n. %t%=%d 
 set format_trackwin_album= %l %=%{?y? %y} 
 
 # Miscellaneous
 set mouse=true
-set set_term_title=false
