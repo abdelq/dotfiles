@@ -11,6 +11,7 @@
 	renames = copies
 
 [include]
+	path = url.inc
 	path = user.inc
 
 [pack]
@@ -34,14 +35,6 @@
 
 [transfer]
 	fsckObjects = true
-
-[url "git@github.com:"]
-	insteadOf = https://github.com/
-	insteadOf = github:
-
-[url "git@gitlab.com:"]
-	insteadOf = https://gitlab.com/
-	insteadOf = gitlab:
 
 [versionsort]
 	suffix = -alpha
