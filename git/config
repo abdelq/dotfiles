@@ -11,6 +11,7 @@
 	renames = copies
 
 [include]
+	path = alias.inc
 	path = url.inc
 	path = user.inc
 
@@ -18,7 +19,7 @@
 	threads = 0
 
 [pretty]
-	simple = %C(bold yellow)%h%C(reset) %<(72,trunc)%s %C(blue)%aN%C(reset) %C(italic green)(%ar)
+	simple = %C(bold yellow)%h%C(reset) %<(72,trunc)%s %C(blue)%aN%C(reset) %C(italic green)%ar
 
 [pull]
 	rebase = preserve
