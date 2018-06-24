@@ -14,7 +14,7 @@
 [alias]
 	cm = commit -m
 	dc = diff --cached
-	lg = log --pretty=simple --graph
+	lg = log --pretty=simple
 	ri = rebase -i
 
 [alias]
