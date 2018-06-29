@@ -5,6 +5,7 @@
 	co = checkout
 	cp = cherry-pick
 	df = diff
+	lg = log --pretty=simple
 	pl = pull
 	ps = push
 	rb = rebase
@@ -12,10 +13,9 @@
 	st = status
 
 [alias]
-	cm = commit -m
-	dc = diff --cached
-	lg = log --pretty=simple
-	ri = rebase -i
+	cim = commit -m
+	dfc = diff --cached
+	rbi = rebase -i
 
 [alias]
 	discard = checkout --
