@@ -1,7 +1,16 @@
 font:
   normal:
     family: monospace
-  size: 9
+  size: 9.0
+
+visual_bell:
+  duration: 0
+
+mouse_bindings:
+  - { mouse: Middle, action: PasteSelection }
+
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>"
 
 key_bindings:
   - { key: V,        mods: Control|Shift,    action: Paste               }
@@ -109,12 +118,3 @@ key_bindings:
   - { key: F10,      mods: Super,   chars: "\x1b[21;3~"                  }
   - { key: F11,      mods: Super,   chars: "\x1b[23;3~"                  }
   - { key: F12,      mods: Super,   chars: "\x1b[24;3~"                  }
-
-mouse_bindings:
-  - { mouse: Middle, action: PasteSelection }
-
-selection:
-  semantic_escape_chars: ",│`|:\"' ()[]{}<>"
-
-visual_bell:
-  duration: 0
