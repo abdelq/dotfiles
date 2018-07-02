@@ -1,9 +1,9 @@
-[core]
-	compression = -1
-
 [column]
 	status = auto
 	tag = auto dense
+
+[commit]
+	verbose = true
 
 [diff]
 	algorithm = histogram
@@ -15,11 +15,8 @@
 	path = url.inc
 	path = user.inc
 
-[pack]
-	threads = 0
-
 [pretty]
-	simple = %C(bold yellow)%h%C(reset) %<(72,trunc)%s %C(blue)%aN%C(reset) %C(italic green)%ar
+	simple = %C(bold yellow)%h %C(auto)%<(72,trunc)%s%C(blue) %aN%C(green) %ar%C(red)%d
 
 [pull]
 	rebase = preserve
