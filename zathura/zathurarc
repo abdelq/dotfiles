@@ -1,6 +1,6 @@
 set adjust-open width
 set highlight-transparency 0.25
-set page-padding 8
+set page-padding 12
 set selection-notification false
 set show-directories false
 set smooth-scroll true
