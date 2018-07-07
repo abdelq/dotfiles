@@ -10,6 +10,7 @@
 	ps = push
 	rb = rebase
 	rs = reset
+	rt = remote
 	sh = show
 	st = status
 
@@ -22,6 +23,7 @@
 	rbi = rebase --interactive
 	rss = reset --soft
 	rsh = reset --hard
+	rtv = remote --verbose
 
 [alias] ; Miscellaneous
 	discard = checkout --
