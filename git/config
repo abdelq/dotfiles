@@ -21,9 +21,6 @@
 [pull]
 	rebase = preserve
 
-[push]
-	default = upstream
-
 [rebase]
 	abbreviateCommands = true
 	missingCommitsCheck = error
