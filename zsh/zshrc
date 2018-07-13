@@ -1,5 +1,0 @@
-# Zsh
-source ~/.zplugrc
-
-# Python
-source virtualenvwrapper_lazy.sh
