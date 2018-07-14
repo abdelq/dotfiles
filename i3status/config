@@ -1,9 +1,6 @@
 general {
-	color_good = "#99cc99"
-	color_degraded = "#ffcc66"
-	color_bad = "#f2777a"
-	separator = "  "
-	interval = 5
+        separator = "  "
+        interval = 5
 }
 
 order += "volume master"
@@ -14,38 +11,39 @@ order += "cpu_temperature all"
 order += "tztime local"
 
 volume master {
-	format = " %volume"
-	format_muted = ""
+        format = " %volume"
+        format_muted = ""
 }
 
 battery all {
-	format = "%status %percentage"
-	format_down = ""
-	status_chr = ""
-	status_unk = ""
-	status_bat = ""
-	status_full = ""
-	low_threshold = 20
-	threshold_type = percentage
-	integer_battery_capacity = true
-	last_full_capacity = true
+        format = "%status %percentage"
+        format_down = ""
+        status_chr = ""
+        status_unk = ""
+        status_bat = ""
+        status_full = ""
+        low_threshold = 20
+        threshold_type = percentage
+        integer_battery_capacity = true
+        last_full_capacity = true
 }
 
 ethernet _first_ {
-	format_up = "E"
-	format_down = "E"
+        format_up = "E"
+        format_down = "E"
 }
 
 wireless _first_ {
-	format_up = " %essid"
-	format_down = ""
+        format_up = " %essid (%frequency)"
+        format_down = ""
 }
 
 cpu_temperature all {
-	format = " %degrees °C"
-	max_threshold = 87
+        format = " %degrees °C"
+        format_above_threshold = " %degrees °C"
+        max_threshold = 87
 }
 
 tztime local {
-	format = " %Y-%m-%d  %H:%M"
+        format = " %Y-%m-%d  %H:%M"
 }

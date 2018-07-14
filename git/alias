@@ -12,11 +12,17 @@
 	rs = reset
 	rt = remote
 	sh = show
+	ss = stash
 	st = status
+
+[alias] ; Common subcommands
+	rta = remote add
+	ssp = stash pop
 
 [alias] ; Common options
 	cia = commit --amend
 	cim = commit --message
+	cob = checkout -b
 	dfc = diff --cached
 	lgf = log --follow
 	lgs = log --pretty=simple --decorate-refs=heads

@@ -1,7 +1,6 @@
 # Abbreviations
-abbr top htop
+abbr ff firefox
 abbr vi nvim
-abbr vim nvim
 
 # Aliases
 ## Directory
@@ -13,9 +12,12 @@ alias .... 'cd ../../..'
 alias la 'ls --almost-all'
 alias ll 'ls -l --human-readable --group-directories-first'
 
-### Make/Remove
-alias md 'mkdir --parents --verbose'
-alias rd 'rmdir --verbose'
+### Make
+alias md 'mkdir --parents'
+
+### Remove
+alias rd 'rm --interactive=once --recursive'
+alias rm 'rm --interactive=once'
 
 ## Disk usage
 alias df 'df --human-readable'
@@ -27,7 +29,10 @@ alias reboot 'systemctl reboot'
 
 ## Other
 alias diff 'diff --color'
+alias doas 'sudo'
 alias rot13 'tr A-Za-z N-ZA-Mn-za-m'
+alias top 'htop'
 
-# Environment variables
+# Variables
 set -x EDITOR nvim
+set fish_greeting
