@@ -1,4 +1,5 @@
 # Abbreviations
+abbr ext extract
 abbr ff firefox
 abbr vi nvim
 
