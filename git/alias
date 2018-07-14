@@ -42,3 +42,5 @@
 	last = log --max-count 1
 	undo = reset --soft HEAD^
 	unstage = reset HEAD
+
+# vim: filetype=gitconfig

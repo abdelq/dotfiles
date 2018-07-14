@@ -47,3 +47,5 @@ cpu_temperature all {
 tztime local {
         format = " %Y-%m-%d  %H:%M"
 }
+
+# vim: filetype=conf
