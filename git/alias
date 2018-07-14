@@ -12,11 +12,13 @@
 	rs = reset
 	rt = remote
 	sh = show
+	sm = submodule
 	ss = stash
 	st = status
 
 [alias] ; Common subcommands
 	rta = remote add
+	sma = submodule add
 	ssp = stash pop
 
 [alias] ; Common options
@@ -26,6 +28,7 @@
 	dfc = diff --cached
 	lgf = log --follow
 	lgs = log --pretty=simple --decorate-refs=heads
+	pst = push --tags
 	rbi = rebase --interactive
 	rss = reset --soft
 	rsh = reset --hard
@@ -33,5 +36,6 @@
 
 [alias] ; Miscellaneous
 	discard = checkout --
+	last = log --max-count 1
 	undo = reset --soft HEAD^
 	unstage = reset HEAD

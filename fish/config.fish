@@ -34,5 +34,5 @@ alias rot13 'tr A-Za-z N-ZA-Mn-za-m'
 alias top 'htop'
 
 # Variables
-set -x EDITOR nvim
+set --export EDITOR nvim
 set fish_greeting
