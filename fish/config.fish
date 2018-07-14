@@ -1,9 +1,18 @@
 # Abbreviations
 abbr ext extract
-abbr ff firefox
-abbr vi nvim
 
 # Aliases
+## Clipboard
+alias pbcopy 'xclip -selection clipboard'
+alias pbpaste 'xclip -selection clipboard -out'
+
+## Commands
+alias doas 'sudo'
+alias mutt 'neomutt'
+alias top 'htop'
+alias vi 'nvim'
+alias vim 'nvim'
+
 ## Directory
 ### Change
 alias ... 'cd ../..'
@@ -25,18 +34,19 @@ alias df 'df --human-readable'
 alias du 'du --human-readable --summarize'
 
 ## Shut down
+alias halt 'systemctl halt'
 alias poweroff 'systemctl poweroff'
 alias reboot 'systemctl reboot'
 
 ## Other
 alias diff 'diff --color'
-alias doas 'sudo'
 alias rot13 'tr A-Za-z N-ZA-Mn-za-m'
-alias top 'htop'
 
 # Variables
 set --export EDITOR nvim
+set --export MAKEFLAGS -j(nproc)
 set fish_greeting
+
 ## Golang
-set --export GOPATH $HOME/.go
-set fish_user_paths $GOPATH/bin
+set --export GOPATH ~/.go
+set fish_user_paths $GOPATH/bin $fish_user_paths

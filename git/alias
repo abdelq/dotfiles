@@ -5,6 +5,7 @@
 	co = checkout
 	cp = cherry-pick
 	df = diff
+	fc = fetch
 	lg = log
 	pl = pull
 	ps = push
@@ -28,7 +29,9 @@
 	dfc = diff --cached
 	lgf = log --follow
 	lgs = log --pretty=simple --decorate-refs=heads
+	psf = push --force-with-lease
 	pst = push --tags
+	psu = push --set-upstream
 	rbi = rebase --interactive
 	rss = reset --soft
 	rsh = reset --hard

@@ -5,4 +5,4 @@ set selection-notification false
 set show-directories false
 set smooth-scroll true
 set statusbar-basename true
-set window-title-home-tilde true
+set window-title-basename true
