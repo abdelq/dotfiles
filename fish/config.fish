@@ -37,3 +37,6 @@ alias top 'htop'
 # Variables
 set --export EDITOR nvim
 set fish_greeting
+## Golang
+set --export GOPATH $HOME/.go
+set fish_user_paths $GOPATH/bin
