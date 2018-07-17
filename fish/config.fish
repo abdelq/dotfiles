@@ -46,7 +46,3 @@ alias rot13 'tr A-Za-z N-ZA-Mn-za-m'
 set --export EDITOR nvim
 set --export MAKEFLAGS -j(nproc)
 set fish_greeting
-
-## Golang
-set --export GOPATH ~/.go
-set fish_user_paths $GOPATH/bin $fish_user_paths
