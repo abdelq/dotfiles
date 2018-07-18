@@ -48,4 +48,4 @@ tztime local {
         format = " %Y-%m-%d  %H:%M"
 }
 
-# vim: filetype=conf
+# vim: filetype=cfg
