@@ -1,29 +1,18 @@
 [global]
-    font = Source Code Pro 10
+    follow = mouse
+    geometry = "320x4-0+22"
+    padding = 8
+    horizontal_padding = 8
+    font = Monospace 9
     markup = full
-    format = "<b>%s</b>\n%b"
-    word_wrap = yes
-    geometry = "256x4-0+20"
-    show_indicators = no
-    separator_height = 0
-    padding = 5
-    horizontal_padding = 5
+    format = "<b>%s %p</b>\n%b"
+    show_age_threshold = 1m
+    word_wrap = true
 
 [shortcuts]
-    close = mod4+Escape
-    close_all = mod4+shift+Escape
-    history = mod4+grave
-
-[urgency_low]
-    background = "#98971a"
-    foreground = "#fbf1c7"
-
-[urgency_normal]
-    background = "#d79921"
-    foreground = "#fbf1c7"
-
-[urgency_critical]
-    background = "#cc241d"
-    foreground = "#fbf1c7"
+    close = ctrl+space
+    close_all = ctrl+shift+space
+    history = ctrl+numbersign
+    context = ctrl+shift+period
 
 # vim: filetype=cfg
