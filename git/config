@@ -41,6 +41,9 @@
 	abbreviateCommands = true
 	missingCommitsCheck = error
 
+[submodule]
+	recurse = true
+
 [tag]
 	sort = version:refname
 
