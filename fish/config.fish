@@ -1,5 +1,6 @@
 # Abbreviations
 abbr ext extract
+abbr py python
 
 # Aliases
 ## Clipboard
