@@ -1,0 +1,20 @@
+# Miscellaneous
+verbose=blank,footnote,label,new-id,affected,edit,special,project,sync,unwait
+nag=
+list.all.tags=no
+uda.estimate.indicator=Estim
+
+# Dates
+weekstart=Monday
+displayweeknumber=no
+calendar.legend=no
+
+# Journal entries
+journal.info=off
+
+# Urgency
+urgency.user.project.School.coefficient=2.0
+
+# User defined attributes
+uda.estimate.label=Estimate
+uda.estimate.type=duration
