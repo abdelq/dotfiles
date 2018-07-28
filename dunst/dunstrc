@@ -8,6 +8,7 @@
     format = "<b>%s %p</b>\n%b"
     show_age_threshold = 1m
     word_wrap = true
+    dmenu = /usr/bin/rofi -dmenu -p dunst
 
 [shortcuts]
     close = ctrl+space

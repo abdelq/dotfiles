@@ -2,7 +2,6 @@
 verbose=blank,footnote,label,new-id,affected,edit,special,project,sync,unwait
 nag=
 list.all.tags=no
-uda.estimate.indicator=Estim
 
 # Dates
 weekstart=Monday
@@ -15,6 +14,12 @@ journal.info=off
 # Urgency
 urgency.user.project.School.coefficient=2.0
 
+# Reports
+report.next.filter=status:pending limit:page -wish
+
 # User defined attributes
 uda.estimate.label=Estimate
 uda.estimate.type=duration
+
+# Sync
+#include sync.rc

@@ -20,8 +20,8 @@
 
 [alias] ; Common subcommands
 	rta = remote add
-	rtu = remote set-url
 	sma = submodule add
+	ssl = stash list
 	ssp = stash pop
 
 [alias] ; Common options
@@ -35,8 +35,8 @@
 	pst = push --tags
 	psu = push --set-upstream
 	rbi = rebase --interactive
-	rss = reset --soft
 	rsh = reset --hard
+	rss = reset --soft
 	rtv = remote --verbose
 
 [alias] ; Miscellaneous

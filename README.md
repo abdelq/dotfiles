@@ -8,6 +8,7 @@ On a new setup:
 
 ## Dependencies
 
+- `dunst` : `firefox`, `rofi`
 - `git` : `neovim`
 
 ## License

@@ -1,5 +1,10 @@
+# Filters
+fset flac=filename="*.flac"
+
 # Formats
 set format_current= %a - %l%=%02n. %t 
+set format_playlist= %-21%A %02n. %t%= %3%d %3%y %3%{codec} %3%{bitrate} Kbps 
+set format_playlist_va=
 set format_title=%a - %t
 set format_trackwin= %02n. %t%=%d 
 set format_trackwin_album= %l %=%{?y? %y} 
