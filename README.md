@@ -1,6 +1,8 @@
-Simple opinionated dotfiles
+Simple opinionated dotfiles.
 
 ## Installation
+
+On a new setup:
 
     git clone https://github.com/abdelq/dotfiles ~/.config
 
