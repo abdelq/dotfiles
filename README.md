@@ -10,6 +10,7 @@ On a new setup:
 
 - `dunst` : `firefox`, `rofi`
 - `git` : `neovim`
+- `neovim` : `fzf`, `ripgrep`, `vim-plug`, `words`
 
 ## License
 

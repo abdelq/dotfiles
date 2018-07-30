@@ -1,9 +1,11 @@
+" Autocommands
+autocmd FileType markdown setlocal spell
+
 " Mappings
 let mapleader = ","
 map ; :
 
-" Options
-source ~/.config/nvim/options.vim
-
-" Plugins
-source ~/.config/nvim/plugins.vim
+" Runtimes
+runtime options.vim
+runtime plugins.vim
+runtime user.vim
