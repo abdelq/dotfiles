@@ -18,7 +18,7 @@ set number
 " Syntax, highlighting and spelling
 set termguicolors
 set cursorline
-set colorcolumn=81
+set colorcolumn=80
 "spellfile
 "spellcapcheck
 "spellsuggest
@@ -47,13 +47,11 @@ set mouse=a
 set clipboard=unnamed
 
 " Editing text
-"textwidth
 "wrapmargin
 "completefunc
 "omnifunc
 set dictionary+=/usr/share/dict/words
 set tildeop
-"joinspaces
 set nrformats+=alpha
 
 " Tabs and indenting
@@ -84,7 +82,7 @@ set wildmode=longest,full
 set wildignorecase
 
 " Executing external commands
-"shell
+set shell=sh
 
 " Running make and jumping to errors
 set grepprg=rg\ --vimgrep
