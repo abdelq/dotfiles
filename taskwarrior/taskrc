@@ -4,7 +4,7 @@ nag=
 list.all.tags=no
 
 # Dates
-weekstart=Monday
+weekstart=monday
 displayweeknumber=no
 calendar.legend=no
 
@@ -15,7 +15,18 @@ journal.info=off
 urgency.user.project.School.coefficient=2.0
 
 # Reports
+## Few details of tasks
+report.ls.columns=id,priority,recur.indicator,depends.indicator,project,tags.count,wait.remaining,scheduled.countdown,due.countdown,until.countdown,description.count
+report.ls.labels=ID,P,R,D,Project,Tags,Wait,S,Due,Until,Description
+
+## Most urgent tasks
+report.next.columns=id,priority,depends,project,tags,recur,estimate,scheduled.countdown,due.relative,until.remaining,description,urgency
 report.next.filter=status:pending limit:page -wish
+report.next.labels=ID,P,Deps,Project,Tag,Recur,Estim,S,Due,Until,Description,Urg
+
+## Waiting (hidden) tasks
+report.waiting.columns=id,start.active,entry.age,depends.indicator,priority,project,tags,recur.indicator,wait,scheduled,due,until,description
+report.waiting.labels=ID,A,Age,D,P,Project,Tags,R,Wait,Sched,Due,Until,Description
 
 # User defined attributes
 uda.estimate.label=Estimate
