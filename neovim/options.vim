@@ -33,7 +33,7 @@ set splitright
 
 " Terminal
 set title
-set titlestring=%f\ %r
+set titlestring=nvim\ %f\ %r
 
 " Using the mouse
 set mouse=a
