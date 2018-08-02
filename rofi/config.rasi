@@ -1,0 +1,13 @@
+configuration {
+	modi: "run,window";
+	width: 48;
+	lines: 16;
+	font: "mono 11";
+	bw: 0;
+	padding: 4;
+	cycle: false;
+	sidebar-mode: true;
+	matching: "fuzzy";
+	scroll-method: 1;
+	max-history-size: 32;
+}
