@@ -18,7 +18,7 @@ set number
 " Syntax, highlighting and spelling
 set termguicolors
 set cursorline
-set colorcolumn=80
+set colorcolumn=81
 "spellfile
 "spellcapcheck
 "spellsuggest
