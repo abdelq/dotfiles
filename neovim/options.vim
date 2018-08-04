@@ -80,6 +80,7 @@ set wildmode=longest,full
 "suffixes
 "suffixesadd
 set wildignorecase
+set inccommand=nosplit
 
 " Executing external commands
 set shell=sh
