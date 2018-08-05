@@ -8,6 +8,7 @@ configuration {
 	cycle: false;
 	sidebar-mode: true;
 	matching: "fuzzy";
+	hide-scrollbar: true;
 	scroll-method: 1;
 	max-history-size: 32;
 }
