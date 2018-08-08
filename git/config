@@ -17,6 +17,12 @@
 [difftool "vimdiff"]
 	path = nvim
 
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	process = git-lfs filter-process
+	required = true
+	smudge = git-lfs smudge -- %f
+
 [include]
 	path = alias
 	path = url
@@ -32,7 +38,8 @@
 	path = nvim
 
 [pretty]
-	simple = %C(bold yellow)%h %C(auto)%<(72,trunc)%s%C(blue) %aN%C(green) %ar%C(red)%d
+	fzf = %C(auto)%h %s %C(cyan)%cr
+	simple = %C(auto)%h %<(72,trunc)%s %C(blue)%aN%C(reset) %C(green)%cr%C(red)%d
 
 [pull]
 	rebase = preserve

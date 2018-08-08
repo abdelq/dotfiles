@@ -30,7 +30,7 @@
 	cob = checkout -b
 	dfc = diff --cached
 	lgf = log --follow
-	lgs = log --pretty=simple --decorate-refs=heads
+	lgs = log --pretty=simple --decorate-refs=heads --graph
 	psf = push --force-with-lease
 	pst = push --tags
 	psu = push --set-upstream
