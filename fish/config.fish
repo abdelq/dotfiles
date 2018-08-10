@@ -45,5 +45,4 @@ alias rot13 'tr A-Za-z N-ZA-Mn-za-m'
 
 # Variables
 set --export EDITOR nvim
-set --export MAKEFLAGS -j(nproc)
 set fish_greeting

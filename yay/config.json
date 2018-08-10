@@ -1,4 +1,4 @@
 {
-	"tarbin": "tar",
+	"removemake": "yes",
 	"sudoloop": true
 }

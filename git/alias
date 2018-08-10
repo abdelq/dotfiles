@@ -34,6 +34,7 @@
 	psf = push --force-with-lease
 	pst = push --tags
 	psu = push --set-upstream
+	rbc = rebase --continue
 	rbi = rebase --interactive
 	rsh = reset --hard
 	rss = reset --soft
@@ -41,6 +42,7 @@
 
 [alias] ; Miscellaneous
 	amend = commit --amend
+	contributors = shortlog --numbered --summary --email
 	discard = checkout --
 	last = log --max-count 1
 	undo = reset --soft HEAD^
