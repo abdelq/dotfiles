@@ -1,5 +1,6 @@
 # Abbreviations
 abbr ext extract
+abbr ff firefox
 abbr py python
 
 # Aliases

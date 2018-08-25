@@ -41,9 +41,6 @@
 	fzf = %C(auto)%h %s %C(cyan)%cr
 	simple = %C(auto)%h %<(72,trunc)%s %C(blue)%aN%C(reset) %C(green)%cr%C(red)%d
 
-[pull]
-	rebase = preserve
-
 [rebase]
 	abbreviateCommands = true
 	missingCommitsCheck = error
